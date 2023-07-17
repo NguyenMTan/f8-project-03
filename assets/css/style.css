@@ -2,11 +2,128 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-color: #10375c;
+    --primary-color: #2e80ce;
+}
+
 html {
-    font-size: 62, 5%;
+    font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100%-48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    margin-left: 6px;
+    text-align: right;
+}
+
+.logo__text--shine {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 0.77;
+}
+
+.logo__text--smile {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.btn {
+    display: inline-block;
+    width: 205px;
+    background: var(--primary-color);
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 60px;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    background: var(--header-color);
+    padding-top: 22px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 42px;
+}
+
+.navbar__link {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.navbar__link:hover,
+.header-action__login:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active {
+    position: relative;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.header-action {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.header-action__login {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.header-action__signup {
+    width: 104px;
+    font-size: 1.6rem;
+    border-radius: 22px;
+    line-height: 44px;
 }
