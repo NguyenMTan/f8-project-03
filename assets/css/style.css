@@ -66,13 +66,13 @@ a {
 .header {
     min-height: 100vh;
     background: var(--header-color);
-    padding-top: 22px;
 }
 
 .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 0 8px;
 }
 
 .navbar__list {
@@ -100,7 +100,7 @@ a {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: -14px;
     width: 6px;
     height: 6px;
@@ -124,6 +124,76 @@ a {
 .header-action__signup {
     width: 104px;
     font-size: 1.6rem;
-    border-radius: 22px;
     line-height: 44px;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    max-width: 44.2%;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero__row {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+    gap: 38px;
+}
+
+.hero__phone {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.66; /* 166.667% */
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img--big {
+    width: 330px;
+    height: 540px;
+    z-index: 1;
+}
+
+.hero__img--small {
+    width: 210px;
+    height: 410px;
+    margin-left: -6px;
 }
