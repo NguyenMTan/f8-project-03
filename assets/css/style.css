@@ -528,3 +528,51 @@ a {
     background: #2e80ce;
     border: #2e80ce;
 }
+
+/* install */
+.install {
+    margin-top: 265px;
+}
+
+.install-bg {
+    position: relative;
+    height: 427px;
+    display: flex;
+    align-items: center;
+    background: #2e80ce;
+    padding: 0 70px 0;
+}
+
+.install .phone {
+    position: absolute;
+    bottom: 0;
+    vertical-align: bottom;
+}
+
+.install .content {
+    width: 586px;
+    margin-left: auto;
+}
+
+.install .heading {
+    width: 489px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+
+.install .desc {
+    margin-top: 18px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
+.install-app {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
